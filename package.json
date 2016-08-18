@@ -42,6 +42,7 @@
     "email-addresses": "^2.0.1",
     "express-force-ssl": "^0.3.0",
     "express-session": "^1.11.3",
+    "express-status-monitor": "0.0.9",
     "follow": "^0.12.1",
     "formidable": "^1.0.17",
     "gm": "^1.22.0",

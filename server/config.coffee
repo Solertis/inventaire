@@ -3,7 +3,7 @@ __ = require('config').universalPath
 _ = __.require 'builders', 'utils'
 
 americano = require 'americano'
-
+statusMonitor = require 'express-status-monitor'
 auth = require './middlewares/auth'
 security = require './middlewares/security'
 routes = require './middlewares/routes'
@@ -14,6 +14,8 @@ content = require './middlewares/content'
 
 module.exports =
   common: [
+    statusMonitor()
+
     security.forceSSL
 
     americano.bodyParser()
